@@ -3,6 +3,9 @@ import { Helmet } from 'react-helmet';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import { Seo } from './seo';
 
+import '../styles/global.css';
+import { header, content } from '../styles/layout.module.css';
+
 export default function Layout({
   children,
   title = false,
@@ -25,13 +28,13 @@ export default function Layout({
   return (
     <>
       <Seo title={title} description={description} image={image} path={path} />
-      <header>
+      <header className={header}>
         <Link to="/">{meta.title}</Link>
         <nav>
           <Link to="/about">About</Link>
         </nav>
       </header>
-      <main>{children}</main>
+      <main classname={content}>{children}</main>
     </>
   );
 }
