@@ -1,0 +1,11 @@
+.image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-wrapper [data-gatsby-image-wrapper] {
+    border: none;
+    max-width: 800px;
+    max-height: 600px;
+}

@@ -17,14 +17,19 @@
   "dependencies": {
     "@mdx-js/mdx": "v1",
     "@mdx-js/react": "v1",
+    "false": "^0.0.4",
     "gatsby": "^3.11.1",
+    "gatsby-plugin-image": "^2.13.0",
     "gatsby-plugin-mdx": "^1.0.59",
     "gatsby-plugin-page-creator": "^4.12.1",
     "gatsby-plugin-react-helmet": "^5.12.1",
+    "gatsby-plugin-sharp": "^4.13.0",
     "gatsby-source-filesystem": "^4.12.1",
+    "gatsby-transformer-sharp": "^4.13.0",
     "node-fetch": "2.6.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "sharp": "^0.30.4"
   }
 }

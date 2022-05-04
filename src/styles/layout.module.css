@@ -1,6 +1,6 @@
 .header {
-    background: var(--black);
-    color: var(--white);
+    background: var(--offBlack);
+    color: var(--lightGray);
     display: flex;
     justify-content: space-between;
     padding: 1rem;
@@ -16,8 +16,7 @@
 
 .header a:focus,
 .header a:hover {
-    background: var(--white);
-    color: var(--black);
+    color: var(--link);
 }
 
 .content {

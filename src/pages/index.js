@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/layout';
+import { imageWrapper } from '../styles/index.module.css';
 
 export default function IndexPage() {
   const data = useStaticQuery(graphql`
@@ -23,7 +25,14 @@ export default function IndexPage() {
 
   return (
     <Layout>
-      <h2>Hello Frontend Masters!</h2>
+      <div className={imageWrapper}>
+        <StaticImage
+          src="../images/north-american-nebula.jpg"
+          alt="the north american nebula"
+          placeholder="dominantColor"
+        />
+      </div>
+      <h1>Hello Frontend Masters!</h1>
       <Link to="/about">About this site</Link>
       <h2>Check out my recent blog posts</h2>
       <ul>
